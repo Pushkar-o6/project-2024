@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamers ERA</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="javascript/main.js"></script>
+  </head>
+  <body >
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="images/gamers_era_logo.jpeg" alt="Logo" /></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#trending-games">Games</a></li>
+        <li><a href="#discription1">About Us</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+      <div class="actions">
+        <a href="login.html" class="btn-primary">Login In</a>
+        <a href="signup.html" class="btn-outline">Sign Up</a>
+      </div>
+    </nav>
+    <section class="intro-bg">
+    <div class="intro" >
+      <h1>Welcome To Gaming Era!</h1>
+      <h4>
+        Discover a wide selection of exciting online games for all ages and
+        interests. Dive into a world of adventure, strategy, and fun with our
+        curated collection.
+      </h4>
+      <button class="firsthomebtn" onclick="location.href = '#trending-games'">Browse Games</button>
+      <button class="secondhomebtn" onclick="location.href = '#discription1'">Explore More</button>
+    </div>
+    </section>
+    <section class="discription1" id="discription1">
+      <div class="d1img">
+        <img
+          src="images/d1f1img.jpg"
+          alt=""
+          class="imga"
+          width="100%"
+          height="100%"
+          id="imga"
+        />
+      </div>
+      <div class="d1">
+        <div
+          class="D1F1"
+          id="D1F1"
+          onclick="changeimg('D1F1')"
+          style="border-left: 2px solid black"
+        >
+          <h1>Immersive Graphics</h1>
+          <h4>Stunning visuals that bring the game to life</h4>
+        </div>
+        <div class="D1F2" id="D1F2" onclick="changeimg('D1F2')">
+          <h1>Exploration and Discovery</h1>
+          <h4>Explore vast worlds and discover hidden treasures</h4>
+        </div>
+        <div class="D1F3" id="D1F3" onclick="changeimg('D1F3')">
+          <h1>Addictive Gameplay</h1>
+          <h4>Engaging gameplay that keeps you hooked for hours</h4>
+        </div>
+      </div>
+    </section>
+    <section class="discription2">
+      <div class="d2">
+        <div
+          class="D2F1"
+          id="D2F1"
+          onclick="changeimg('D2F1')"
+          style="border-left: 2px solid black"
+        >
+          <h1>Wide Selection of Games</h1>
+          <h4>
+            Choose from a vast collection of online games across various genres
+            to suit your preferences.
+          </h4>
+        </div>
+        <div class="D2F2" id="D2F2" onclick="changeimg('D2F2')">
+          <h1>Multiplayer Options</h1>
+          <h4>
+            Enjoy playing with friends or other online players with our
+            multiplayer gaming options.
+          </h4>
+        </div>
+        <div class="D2F3" id="D2F3" onclick="changeimg('D2F3')">
+          <h1>Regular Updates and New Releases</h1>
+          <h4>
+            Stay up-to-date with the latest game releases and updates to keep
+            your gaming experience fresh.
+          </h4>
+        </div>
+      </div>
+      <div class="d2img">
+        <img
+          src="images/D2F1img.png"
+          alt=""
+          class="imga"
+          width="100%"
+          height="100%"
+          id="imga2"
+        />
+      </div>
+    </section>
+    <section class="trending-games" id="trending-games">
+      <div class="container">
+        <header>
+          <h1>Trending Games</h1>
+          <p>Discover the hottest games everyone’s playing!</p>
+        </header>
+
+        <div class="main-content">
+          <section class="game-grid">
+            <div class="game-tile">
+              <img src="images/game1.jpg" alt="Game 1" />
+              <h2>Call Of Duty : MW2</h2>
+              <p>Price: <b>$30.9</b> </p>
+              <button class="play-now">Buy Now</button>
+            </div>
+            <div class="game-tile">
+              <img src="images/game2.jpg" alt="Game 2" />
+              <h2>Ghost Of Tsushima</h2>
+              <p>Price :<b>$15.66</b></p>
+              <button class="play-now">Buy Now</button>
+            </div>
+            <div class="game-tile">
+              <img src="images/game3.jpg" alt="Game 3" />
+              <h2>Grand Theft auto 5</h2>
+              <p>Price : <b>$15.98</b></p>
+              <button class="play-now">Buy Now</button>
+            </div>
+            <div class="game-tile">
+              <img src="images/game4.jpg" alt="Game 1" />
+              <h2>Black Myth: Wukong</h2>
+              <p>Price : <b>$25.99</b></p>
+              <button class="play-now">Buy Now</button>
+            </div>
+            <div class="game-tile">
+              <img src="images/game5.jpg" alt="Game 2" />
+              <h2>Red Dead Redemption 2</h2>
+              <p>Price : <b>$25.99</b></p>
+              <button class="play-now">Buy Now</button>
+            </div>
+            <div class="game-tile">
+              <img src="images/game6.jpg" alt="Game 3" />
+              <h2>The Last of Us Part I</h2>
+              <p>Price : <b>$10.99</b></p>
+              <button class="play-now">Buy Now</button>
+            </div>
+          </section>
+
+          <aside>
+            <div class="filters">
+              <h3>Filter by:</h3>
+              <input type="text" placeholder="Search..." />
+              <div class="filter-options">
+                <label>Platform:</label>
+                <select>
+                  <option>All Platforms</option>
+                  <option>PC</option>
+                  <option>Console</option>
+                  <option>Mobile</option>
+                </select>
+
+                <label>Genre:</label>
+                <select>
+                  <option>All Genres</option>
+                  <option>Action</option>
+                  <option>RPG</option>
+                  <option>Strategy</option>
+                </select>
+
+                <label>Timeframe:</label>
+                <select>
+                  <option>Last 24 Hours</option>
+                  <option>Last 7 Days</option>
+                  <option>Last 30 Days</option>
+                </select>
+              </div>
+            </div>
+
+           
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="trending-games">
+      <div class="container">
+        <header>
+          <h1>Free Multiplayer Games</h1>
+          <p>Discover the world of multiplayer for Free!</p>
+        </header>
+
+        <div class="main-content">
+          <section class="game-grid">
+            <div class="game-tile">
+              <img src="images/multigame1.jpg" alt="Game 1" />
+              <h2>PUBG: BATTLEGROUNDS</h2>
+              <p>Price: <b>Free</b> </p>
+              <button class="play-now">Play Now</button>
+            </div>
+            <div class="game-tile">
+              <img src="images/multigame2.jpg" alt="Game 2" />
+              <h2>Valorent</h2>
+              <p>Price :<b>Free</b></p>
+              <button class="play-now">Play Now</button>
+            </div>
+            <div class="game-tile">
+              <img src="images/multigame3.jpg" alt="Game 3" />
+              <h2>Fortnite</h2>
+              <p>Price : <b>Free</b></p>
+              <button class="play-now">Play Now</button>
+            </div>
+            <div class="game-tile">
+              <img src="images/multigame4.jpg" alt="Game 1" />
+              <h2>CS:GO</h2>
+              <p>Price : <b>Free</b></p>
+              <button class="play-now">Play Now</button>
+            </div>
+            <div class="game-tile">
+              <img src="images/multigame5.jpg" alt="Game 2" />
+              <h2>Apex Legends</h2>
+              <p>Price : <b>Free</b></p>
+              <button class="play-now">Play Now</button>
+            </div>
+            <div class="game-tile">
+              <img src="images/multigame6.jpg" alt="Game 3" />
+              <h2>Warframe</h2>
+              <p>Price : <b>Free</b></p>
+              <button class="play-now">Play Now</button>
+            </div>
+          </section>
+
+          <aside>
+            <div class="filters">
+              <h3>Filter by:</h3>
+              <input type="text" placeholder="Search..." />
+              <div class="filter-options">
+                <label>Platform:</label>
+                <select>
+                  <option>All Platforms</option>
+                  <option>PC</option>
+                  <option>Console</option>
+                  <option>Mobile</option>
+                </select>
+
+                <label>Genre:</label>
+                <select>
+                  <option>All Genres</option>
+                  <option>Action</option>
+                  <option>RPG</option>
+                  <option>Strategy</option>
+                </select>
+
+                
+              </div>
+            </div>
+
+           
+          </aside>
+        </div>
+      </div>
+
+    </section>
+    
+    
+    <section class="subscription-section">
+      <h2 class="section-title">Choose Your Subscription Plan</h2>
+      <p class="section-subtitle">Unlock exclusive features and access to 20+ games with every plan.</p>
+    
+      <div class="subscription-plans">
+        
+        <div class="subscription-card" data-plan="1-month">
+          <h3 class="plan-title">1 Month</h3>
+          <p class="plan-price">$10 / month</p>
+          <ul class="plan-features">
+            <li>Access to 20+ games</li>
+            <li>Priority customer support</li>
+            <li>Exclusive monthly events</li>
+          </ul>
+          <button class="subscribe-button">Subscribe Now</button>
+        </div>
+    
+       
+        <div class="subscription-card highlight" data-plan="6-month">
+          <h3 class="plan-title">6 Months</h3>
+          <p class="plan-price">$50 / 6 months <span class="discount">(Save 15%)</span></p>
+          <ul class="plan-features">
+            <li>Access to 20+ games</li>
+            <li>Priority customer support</li>
+            <li>Exclusive monthly events & bonuses</li>
+          </ul>
+          <button class="subscribe-button">Subscribe Now</button>
+        </div>
+    
+        
+        <div class="subscription-card" data-plan="1-year">
+          <h3 class="plan-title">1 Year</h3>
+          <p class="plan-price">$90 / year <span class="discount">(Save 25%)</span></p>
+          <ul class="plan-features">
+            <li>Access to 20+ games</li>
+            <li>Dedicated support</li>
+            <li>Exclusive events, bonuses & rewards</li>
+          </ul>
+          <button class="subscribe-button">Subscribe Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer" id="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Gamers Era</h2>
+        </div>
+    
+       
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a>
+          <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+          <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
+        </div>
+    
+       
+        <div class="footer-contact">
+          <p>Email: gamersEra@gmail.com</p>
+          <p>Phone: +91 7009095200</p>
+        </div>
+      </div>
+    
+    
+      <div class="footer-bottom">
+        <p>&copy; 2024 Gamers Era. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
